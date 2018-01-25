@@ -1,0 +1,395 @@
+body {
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: fixed;
+    font-family:"Microsoft Yahei", sans-serif;
+    font-weight: 300;
+    height: 100vh;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    cursor: default;
+}
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    color: #000;
+}
+a:hover {
+    border: 0;
+    opacity: 0.6;
+}
+h4 {
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    font-size: 14px;
+}
+img {
+    max-width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 1px;
+    box-sizing: border-box;
+}
+figure {
+    margin: 1em auto;
+    text-align: center;
+}
+figcaption {
+    font-size: 0.8em;
+    opacity: 0.5;
+}
+hr {
+    border: 0;
+    border-top: 1px dotted #ddd;
+    margin: 30px auto;
+    width: 100px;
+}
+pre {
+    overflow: auto;
+    background: #eaeaea;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+pre code {
+    padding: 0;
+}
+code {
+    background: #eaeaea;
+    border-radius: 5px;
+    padding: 2px 5px;
+    word-wrap: break-word;
+}
+del {
+    opacity: 0.3;
+}
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+}
+article header.title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+article .info {
+    text-align: center;
+    margin: 50px 0;
+    border-top: 1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;
+    padding: 30px 0;
+    color: #999;
+}
+article .info span {
+    display: block;
+}
+.pager {
+    font-size: 40px;
+    font-family: Cambria, serif;
+    margin-top: -122px;
+    height: 122px;
+}
+.pager a {
+    border: 0;
+    color: #bbb;
+    text-align: center;
+    width: 30px;
+}
+.pager a.pre {
+    float: left;
+}
+.pager a.next {
+    float: right;
+}
+.pager a:hover {
+    color: inherit;
+}
+.post-like {
+    text-align:center;
+    padding:10px
+}
+.post-like a {
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #F74840;
+    box-shadow: none;
+    background: #fff;
+    display: inline-block;
+    text-align: center;
+    margin: 0 2px;
+    color: #F74840;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 0;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+.post-like a.done, .post-like a:hover {
+}
+.post-like a.done {
+    cursor:not-allowed;
+    background-color: #F74840;
+    color: #fff;
+    border-color: #F74840;
+}
+section {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 1px dotted #ddd;
+    padding-bottom: 50px;
+}
+section a.all {
+    margin-bottom: 50px;
+    display: inline-block;
+    border: 0;
+    font-size: 0.8em;
+    color: #fff;
+    background: #000;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+section ul {
+    list-style: none;
+    line-height: 1.8em;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #999;
+}
+.footnotes ol p, ul p, ol p, pre p {
+    margin: 0;
+}
+::selection {
+    background: #555;
+    color: #FFF;
+}
+::-webkit-scrollbar-track-piece {
+    background: #efefef;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+}
+::-webkit-scrollbar-thumb {
+    height: 20px;
+    border-radius: 10px;
+    background-color: #555;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+ #comments {
+    text-align:center;
+    margin:40px 0;
+    font-size:13px;
+    color:#aaa;
+}
+.comment {
+    z-index:1;
+}
+.comment.depth-1 {
+    margin:20px 0 20px 0;
+    border-bottom:1px solid #eee;
+    padding:0 0 20px;
+    overflow:hidden;
+}
+.comment.depth-1 .depth-1 {
+    padding:0 0;
+    border:0;
+}
+.comment .comment {
+    margin-left:50px;
+    margin-top:10px;
+}
+.comment .comment .comment {
+    margin-left:0px;
+}
+.comment .comment-body {
+    padding:10px;
+    position:relative;
+}
+.comment .comment-body p {
+    font-size:13px;
+    clear:both;
+}
+.comment br {
+    display:none;
+}
+.comment .comment-author {
+    font-size:13px;
+    margin:0 0 24px 0;
+    line-height:26px;
+}
+.comment .comment-author .avatar {
+    float:left;
+    width:42px;
+    height:42px;
+    padding:1px;
+    margin:0 10px 0 0;
+    border-radius:100px;
+    box-shadow:0 0 1px #fff, 0 0 2px #aaa
+}
+.comment .comment-author cite, .comment .comment-author span {
+    position:relative;
+    top:-2px;
+}
+.comment .comment-author span {
+    left:5px;
+    color:#aaa
+}
+.comment .comment-awaiting-moderation {
+    font-style:normal;
+    color:#1F1F1F;
+}
+.comment .comment-meta {
+    position:absolute;
+    top:28px;
+    left:62px;
+    height:26px;
+    overflow:hidden;
+    font-size:13px;
+    color:#aaa;
+}
+.comment .comment-meta a {
+    color:#aaa
+}
+.comment .comment-meta a.comment-edit-link {
+    display:none;
+}
+.comment .reply a {
+    position:absolute;
+    top:10px;
+    right:0;
+    font-size:12px;
+    line-height:20px;
+    padding:0 5px;
+    color:#fff;
+    border-radius:3px;
+    background:#fa1;
+}
+.comment .reply:hover a {
+    background:#1F1F1F;
+}
+#respond {
+    border-top:0px solid #eee;
+    position:relative;
+}
+#respond h3 {
+    font-weight:bold;
+    float:left;
+    margin:10px 0 6px;
+    font-size:14px;
+    line-height:30px;
+}
+#commentform {
+    clear:both;
+    line-height:1em;
+    font-size:13px;
+}
+#commentform a {
+    line-height:2.6em
+}
+#commentform label {
+    display:block;
+    position:relative;
+    right:0;
+    margin:10px 0 -4px 0;
+}
+#commentform input, #commentform textarea {
+    max-width:220px;
+    width:100%;
+    padding:3px 10px;
+    margin:10px 5px 0 0;
+    border:1px solid #eee;
+    border-radius:3px;
+    background:#fff;
+    font-size:13px
+}
+#commentform textarea {
+    max-width:100%;
+    width:100%;
+    height:8em;
+}
+#commentform textarea:focus, #commentform input:focus {
+    border:1px solid #888;
+}
+#commentform input#submit {
+    cursor:pointer;
+    max-width:150px
+}
+#commentform input#submit:hover {
+    background:#888;
+    border:1px solid #888;
+    color:#fff;
+}
+.butterBar {
+    width:100%;
+    line-height:80px;
+    position:fixed;
+    text-align:center;
+    left:0;
+    top:0;
+    z-index:11;
+    background:rgba(255, 255, 255, .8);
+    box-shadow:0 1px 3px #eee;
+}
+.butterBar-message {
+    font-size:14px;
+}
+.commentlist {
+    counter-reset:comment-floor;
+}
+.commentlist > .comment {
+    position:relative;
+}
+.commentlist > .comment:before {
+    content:'#'counter(comment-floor);
+    counter-increment:comment-floor;
+    font-size:18px;
+    position:absolute;
+    top:40px;
+    right:0;
+    color:#ccc;
+}
+a.back_to_top {
+    text-decoration: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background: #f0f0f0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: center;
+    transition-duration: .5s;
+    transition-propety: background-color;
+    display: none;
+}
+a.back_to_top span {
+    color: #888;
+}
+a.back_to_top:hover {
+    cursor: pointer;
+    background: #dfdfdf;
+}
+a.back_to_top:hover span {
+    color: #555;
+}
+@media print, screen and (max-width: 580px) {
+    .back_to_top {
+        display: none !important;
+    }
+}
